@@ -48,7 +48,8 @@ gulp.task('compile-app-js', function(){
     let jqueryPath = path.join(nodeModulesPath,'jquery', 'dist', 'jquery.min.js');
     let popperPath = path.join(nodeModulesPath,'popper.js', 'dist', 'umd', 'popper.min.js');
     let bootstrapPath = path.join(nodeModulesPath,'bootstrap', 'dist','js', 'bootstrap.min.js');
-    return gulp.src([jqueryPath, popperPath, bootstrapPath])
+    let iconfontPath = path.join('src', 'global', 'js', 'iconfont.js');
+    return gulp.src([jqueryPath, popperPath, bootstrapPath, iconfontPath])
         .pipe(concat('app.js'))
         .pipe(gulp.dest(path.join(distPath, 'js')));
 })

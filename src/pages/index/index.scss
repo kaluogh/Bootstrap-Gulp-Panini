@@ -8,3 +8,43 @@
         color: green;
     }
 }
+// .modal-full{
+//     top: 0;
+//     left: 0;
+//     display: none;
+//     position: absolute;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: transparent;
+// }
+
+.modal-full{
+    margin: 0;
+    padding: 0;
+    padding-right: 0px !important;
+    .modal-dialog{
+        margin: 0;
+        .modal-content{
+            height: 100vh;
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .modal-full{
+        margin: 10rem auto auto auto;
+        padding: auto;
+        .modal-dialog{
+            margin: auto;
+            .modal-content{
+                height: auto;
+            }
+        }
+    }
+}
+
+.header-wrap{
+    position: relative;
+    min-height: 400px;
+    background-image: url('../assets/index-headerbg.png');
+}

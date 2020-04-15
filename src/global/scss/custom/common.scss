@@ -1,0 +1,16 @@
+$theme-background-light: red;
+$theme-background-dark: blue;
+$theme-color-light: red;
+$theme-color-dark: blue;
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.theme-background-light{
+    background-color: $theme-background-light !important;
+}
